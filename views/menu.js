@@ -34,7 +34,7 @@
       kicker: 'IX NOC · NIGHT SHIFT', h1: 'PEERING PATROL', wide: true,
       body: [
         h('p', { text: 'You are on the NOC shift at an Internet Exchange. Members keep leaking packets that do not belong on the shared peering LAN. Zap them before they flood everyone, and let legitimate peering traffic through. Every decision is explained.' }),
-        h('h3', { text: 'How to play' }),
+        h('h3', { role: 'heading', 'aria-level': '2', text: 'How to play' }),
         h('div', { class: 'keys' }, [
           h('kbd', { text: 'Click' }), h('span', { text: 'zap the packet under the reticle' }),
           h('kbd', { text: 'Tab' }), h('span', { text: 'lock the next packet (Shift+Tab: previous)' }),
@@ -44,14 +44,14 @@
           h('kbd', { text: 'P' }), h('span', { text: 'pause · M: sound on/off' })
         ]),
         h('p', { text: 'Clear a phase with 10 correct zaps and at least 80% accuracy. Zapping legitimate traffic costs more than a leak. Integrity carries over through the whole shift.' }),
-        h('h3', { text: 'Mode' }),
+        h('h3', { role: 'heading', 'aria-level': '2', text: 'Mode' }),
         h('div', { class: 'mode-row' }, [
           modeBtn('arcade', 'Arcade', 'real time'),
           modeBtn('practice', 'Practice', 'every packet waits for you')
         ]),
-        h('h3', { text: 'Start a shift at' }),
+        h('h3', { role: 'heading', 'aria-level': '2', text: 'Start a shift at' }),
         list,
-        endlessList ? h('h3', { text: 'Recall test' }) : null,
+        endlessList ? h('h3', { role: 'heading', 'aria-level': '2', text: 'Recall test' }) : null,
         endlessList
       ]
     });

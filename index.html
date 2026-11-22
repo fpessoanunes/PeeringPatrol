@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main aria-label="Peering Patrol game">
 <canvas id="playfield" tabindex="0" aria-label="Peering LAN playfield. Tab locks a packet, Space zaps it, L lets it through in practice mode, F opens the shift log."></canvas>
 <header id="hud" aria-label="Shift status"></header>
 <div id="banner" aria-hidden="true"></div>
@@ -24,6 +25,7 @@
 </aside>
 <div id="screens"></div>
 <div id="live" class="sr-only" aria-live="polite" aria-atomic="false"></div>
+</main>
 <noscript><p class="noscript">Peering Patrol needs JavaScript enabled.</p></noscript>
 
 <!-- Script order is a contract: specs/001-peering-patrol-game/contracts/data-files.md -->
